@@ -1,0 +1,15 @@
+.Layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.Layout > header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.Layout > main {
+    padding: 1.5rem;
+}
