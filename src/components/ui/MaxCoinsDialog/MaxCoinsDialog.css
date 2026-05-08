@@ -1,0 +1,116 @@
+.max-coins-dialog {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  max-width: 460px;
+  width: 100%;
+  animation: slideUp 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: var(--shadow-lg);
+}
+
+.max-coins-dialog__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.max-coins-dialog__icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.max-coins-dialog__title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.max-coins-dialog__subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.max-coins-dialog__subtitle strong {
+  color: var(--primary);
+}
+
+.max-coins-dialog__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.max-coins-dialog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.radio-coin-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.radio-coin-option:hover {
+  border-color: var(--border-light);
+  background: var(--surface-2);
+}
+
+.radio-coin-option--selected {
+  border-color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.radio-coin-option input[type='radio'] {
+  accent-color: var(--danger);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.radio-coin-option__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.radio-coin-option__info {
+  flex: 1;
+}
+
+.radio-coin-option__symbol {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.radio-coin-option__name {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.max-coins-dialog__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.max-coins-dialog__actions button {
+  flex: 1;
+}

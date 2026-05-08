@@ -1,0 +1,68 @@
+.home-page__hero {
+  margin-bottom: 36px;
+}
+
+.home-page__stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.stat-chip__value {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Grid */
+.coins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Search results banner */
+.search-results-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--primary-glow);
+  border: 1px solid var(--primary-glow-strong);
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.search-results-banner strong {
+  color: var(--primary);
+}
+
+.search-results-banner button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.search-results-banner button:hover {
+  color: var(--text);
+  background: var(--surface);
+}

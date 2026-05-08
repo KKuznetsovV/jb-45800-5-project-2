@@ -1,0 +1,174 @@
+.ai-page__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.ai-page__actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Coin row for AI page */
+.ai-coin-row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: var(--transition);
+  margin-bottom: 12px;
+}
+
+.ai-coin-row:hover {
+  border-color: var(--border-light);
+}
+
+.ai-coin-row__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+.ai-coin-row__img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--surface-2);
+}
+
+.ai-coin-row__symbol {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.ai-coin-row__name {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Recommendation box */
+.ai-rec-box {
+  flex: 1;
+  min-width: 0;
+}
+
+.ai-rec-box__placeholder {
+  color: var(--text-dim);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.ai-rec-result {
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border-left: 4px solid;
+  animation: priceReveal 0.4s ease;
+}
+
+.ai-rec-result--buy {
+  background: var(--success-bg);
+  border-color: var(--success);
+}
+
+.ai-rec-result--sell {
+  background: var(--danger-bg);
+  border-color: var(--danger);
+}
+
+.ai-rec-result__verdict {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.verdict-buy { color: var(--success); }
+.verdict-sell { color: var(--danger); }
+
+.ai-rec-result__text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.ai-rec-error {
+  padding: 12px 16px;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger);
+  border-radius: var(--radius-sm);
+  color: var(--danger);
+  font-size: 0.875rem;
+}
+
+/* Individual button */
+.ai-coin-row__btn {
+  flex-shrink: 0;
+  padding: 9px 18px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.ai-coin-row__btn:hover:not(:disabled) {
+  background: var(--primary-glow);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.ai-coin-row__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ai-coin-row__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* No key banner */
+.ai-key-banner {
+  background: var(--surface);
+  border: 1px solid var(--primary-glow-strong);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.ai-key-banner__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.ai-key-banner__desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
